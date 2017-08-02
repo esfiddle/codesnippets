@@ -1,30 +1,4 @@
-# Boilermaker
-
-*Good things come in pairs*
-
-Looking to mix up a backend with express/sequelize and a frontend with react/redux? That's `boilermaker`!
-
-Follow along with the workshop to make your own! This canonical version can serve as a reference, or a starting point all on its own.
-
-## Setup
-
-To use this boilerplate, you'll need to take the following steps:
-
-* Don't fork or clone this repo! Instead, create a new, empty directory on your machine and `git init` (or create an empty repo on Github and clone it to your local machine)
-* Run the following commands:
-
-```
-git remote add boilermaker https://github.com/FullstackAcademy/boilermaker.git
-git fetch boilermaker
-git merge boilermaker/master
-```
-
-Why did we do that? Because every once in a while, `boilermaker` may be updated with additional features or bug fixes, and you can easily get those changes from now on by entering:
-
-```
-git fetch boilermaker
-git merge boilermaker/master
-```
+# CodeSnippets
 
 ## Customize
 
@@ -32,8 +6,8 @@ Now that you've got the code, follow these steps to get acclimated:
 
 * Update project name and description in `package.json` file
 * `npm install`, or `yarn install` - whatever you're into
-* Create two postgres databases: `boilermaker` and `boilermaker-test` (you can substitute these with the name of your own application - just be sure to go through and change the `package.json` and `server/db/db.js` to refer to the new names)
-  * By default, running `npm test` will use `boilermaker-test`, while regular development uses `boilermaker`
+* Create two postgres databases: `codesnippets` and `codesnippets-test` (you can substitute these with the name of your own application - just be sure to go through and change the `package.json` and `server/db/db.js` to refer to the new names)
+  * By default, running `npm test` will use `codesnippets-test`, while regular development uses `codesnippets`
 * Create a file called `secrets.js` in the project root
   * This file is `.gitignore`'d, and will *only* be required in your *development* environment
   * Its purpose is to attach the secret env variables that you'll use while developing
@@ -53,8 +27,6 @@ Now that you've got the code, follow these steps to get acclimated:
 ## Linting
 
 Linters are fundamental to any project - they ensure that your code has a consistent style, which is critical to writing readable code.
-
-Everyone has their own style, so Boilermaker does not come prepackaged with a linter. However, we `strongly` recommend that you (and your team, if working in a group) decide on a style, and stick with it. Here's what you need to do:
 
 * `npm install -g eslint`
 * In the root of your project, `eslint --init`
@@ -101,7 +73,5 @@ Now, you should be deployed! To clean up, remove your deploy branch:
 
 4. `git checkout master`: return to your master branch
 5. `git branch -d deploy`: remove the deploy branch
-
-Why do all of these steps? The big reason is because we don't want our production server to be cluttered up with dev dependencies like webpack, but at the same time we don't want our development git-tracking to be cluttered with production build files like bundle.js! By doing these steps, we make sure our development and production environments both stay nice and clean!
 
 (By the way, if performing these steps seems tedious and error-prone, try writing a shell script that will do them all for you!)
