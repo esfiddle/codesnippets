@@ -1,5 +1,7 @@
 # CodeSnippets
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/esfiddle/codesnippets.svg)](https://greenkeeper.io/)
+
 ## Customize
 
 Now that you've got the code, follow these steps to get acclimated:
