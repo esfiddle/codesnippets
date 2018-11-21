@@ -1,5 +1,7 @@
 # CodeSnippets
 
+[![Join the chat at https://gitter.im/esfiddle/codesnippets](https://badges.gitter.im/esfiddle/codesnippets.svg)](https://gitter.im/esfiddle/codesnippets?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 ## Customize
 
 Now that you've got the code, follow these steps to get acclimated:
